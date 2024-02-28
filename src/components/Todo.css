@@ -1,0 +1,89 @@
+.Todo_Main {
+    display: flex;
+    align-items: start;
+    background-color: grey;
+    margin: 10px;
+    max-width: 1000px;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.Todo__Head {
+    display: flex;
+    align-items: center;
+    /* background-color: tomato; */
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.Todo__Head__Title{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.Todo__Head__Title__Edit {
+    width: 300px;
+    font-size: 30px;
+}
+.Todo__Head__Options {
+    display: flex;
+    flex-direction: row;
+}
+
+.Todo__Select__Status {
+    background-color: white;
+    border: 0;
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-right: 10px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.Todo__Text__Box{
+    width: 780px;
+    height: 100px;
+    resize: none;
+    font-size: 18px;
+}
+.Todo__Description{
+    font-size: 20px;
+    max-width: 800px;
+}
+
+.Todo__Created__Date__Text {
+    font-size: 13px;
+    margin-top: 5px;
+}
+.Todo__Buttons {
+    font-size: 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 0;
+    padding: 7px;
+    cursor: pointer;
+}
+.Todo__Buttons:hover {
+    opacity: 75%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .Todo_Main {
+      flex-direction: column;
+    }
+    .Todo__Head {
+        flex-direction: column;
+        align-items: start;
+    }
+    .Todo__Head__Options {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .Todo__Buttons {
+        margin-top: 10px;
+    }
+    .Todo__Text__Box{
+        width: 427px;
+        height: 170px;
+    }
+    
+}

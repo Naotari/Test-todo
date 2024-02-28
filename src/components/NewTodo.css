@@ -1,0 +1,32 @@
+.NewTodo__Main {
+    position: absolute;
+    background-color: aqua;
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(66, 95, 95);
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    padding: 20px;
+    z-index: 9999;
+    pointer-events: auto;
+}
+.NewTodo__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.NewTodo__Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.NewTodo__Input__Box {
+    margin-bottom: 5px;
+}
+.NewTodo__Text__Box {
+    margin-bottom: 5px;
+    height: 100px;
+    resize: none;
+}
