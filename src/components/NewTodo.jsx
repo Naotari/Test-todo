@@ -25,7 +25,7 @@ const AddTodo = (props) => {
             const newTodopost = await axios.post("http://localhost:3000/", newTodo)
     
             props.AddTodoHandler();
-            
+            location.reload();
         } catch (error) {
           console.log(error);   
         }
