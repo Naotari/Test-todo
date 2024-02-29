@@ -9,18 +9,6 @@ function App() {
   const [addTodoOpen, setAddTodoOpen] = useState(false);
   const [statusFilter, setStatusFilter] = useState("all")
 
-  if(!(window.localStorage.list)) {
-    const test = [{
-      id:0,
-      title:"text titulo",
-      description:"test descripcion",
-      createdAt:"28/2/2024 11:00:00",
-      status:"todo",
-      dueDate:"03/04/2024"
-    }]
-    window.localStorage.setItem("list", JSON.stringify(test))
-  }
-
   const SearchChangeHandler = (event) => {setSearchInput(event.target.value)}
   const statusfilterChangeHandler = (event) => {setStatusFilter (event.target.value)}
   const AddTodoHandler = () => {
@@ -42,7 +30,7 @@ function App() {
         <select className='App__Selector' value={statusFilter} onChange={statusfilterChangeHandler}>
           <option value="all">Todos</option>
           <option value="todo">Por hacer</option>
-          <option value="inProgress">En progreso</option>
+          <option value="inprogress">En progreso</option>
           <option value="done">Hecho</option>
         </select>
       </div>
